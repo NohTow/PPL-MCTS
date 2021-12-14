@@ -74,5 +74,20 @@ for i, (_, row) in  enumerate(lines.iterrows()):
 	prompt_texts[i] =  "<|startoftext|> "  +  str(row["text"])
 ```
 
-
+## References
+@article{DBLP:journals/corr/abs-2109-13582,
+  author    = {Antoine Chaffin and
+               Vincent Claveau and
+               Ewa Kijak},
+  title     = {Generating texts under constraint through discriminator-guided {MCTS}},
+  journal   = {CoRR},
+  volume    = {abs/2109.13582},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2109.13582},
+  eprinttype = {arXiv},
+  eprint    = {2109.13582},
+  timestamp = {Mon, 04 Oct 2021 17:22:25 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2109-13582.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
 
