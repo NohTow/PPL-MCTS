@@ -75,6 +75,7 @@ for i, (_, row) in  enumerate(lines.iterrows()):
 ```
 
 ## References
+```
 @article{DBLP:journals/corr/abs-2109-13582,
   author    = {Antoine Chaffin and
                Vincent Claveau and
@@ -90,4 +91,4 @@ for i, (_, row) in  enumerate(lines.iterrows()):
   biburl    = {https://dblp.org/rec/journals/corr/abs-2109-13582.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
-
+```
