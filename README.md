@@ -80,7 +80,7 @@ for i, (_, row) in  enumerate(lines.iterrows()):
   author    = {Antoine Chaffin and
                Vincent Claveau and
                Ewa Kijak},
-  title     = {Generating texts under constraint through discriminator-guided {MCTS}},
+  title     = {{PPL-MCTS: Constrained Textual Generation Through Discriminator-Guided MCTS Decoding}},
   journal   = {CoRR},
   volume    = {abs/2109.13582},
   year      = {2021},
@@ -91,4 +91,5 @@ for i, (_, row) in  enumerate(lines.iterrows()):
   biburl    = {https://dblp.org/rec/journals/corr/abs-2109-13582.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
+
 ```
