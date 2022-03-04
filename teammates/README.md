@@ -11,6 +11,8 @@ In this follow-up paper, we studied three types of transformer-based discriminat
 
 Results show that while transformers with bidirectional attention are usually preferred for discriminative tasks, they are not auto-regressive and are therefore much more expensive when used to guide generation. 
 Although a little less precise, unidirectional transformers allow to achieve very similar results for a much more reasonable and consistent cost. As a consequence, our study shows that unidirectional discriminators should be preferred for cooperative generation, for which slight accuracy drops can be balanced by reinvesting part of the computational gain.
+![image](https://user-images.githubusercontent.com/38869395/156791117-315b0a15-d85f-44f9-b4d9-7c1106aee816.png)
+
 
 **Since original PPL-MCTS used bidirectional attention, we encourage the use of the unidirectional version of this follow-up, which result in a massive gain in generation time.** 
 
