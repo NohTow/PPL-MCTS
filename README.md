@@ -73,6 +73,11 @@ for i, (_, row) in  enumerate(lines.iterrows()):
 	labels[i, int(row["label"])] =  1
 	prompt_texts[i] =  "<|startoftext|> "  +  str(row["text"])
 ```
+## Execution time
+PPL-MCTS use a BERT, which is a transformer with bidirectional attention, as guiding discriminator. Using a discriminator with unidirectional attention allow to greatly speed up the generation by using cached hidden states. 
+You can find more information as well as code working with different type of discriminator in the [teammates folder](https://github.com/NohTow/PPL-MCTS/tree/main/teammates).
+
+**Please consider using the version working with an unidirectional model as it results in a massive gain in generation time with little effect on the generation quality.**
 
 ## References
 ```
