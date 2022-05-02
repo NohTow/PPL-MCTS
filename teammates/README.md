@@ -44,7 +44,8 @@ A number of parameters can be defined when using MCTS generation scripts.
 
 To run usual parameters generation, use: `python mcts_ag_bert_uni.py--temperature 1 --penalty 1.2 --c 3 --num_it 50`
 
-## Training parameters
+## Training
+### Discriminators
 A number of parameters can be defined when training discriminators. Training scripts are based based on HF trainer, hence they mostly refer to HF trainer scripts ones.
 |Parameter | Definition |
 |--|--|
@@ -59,6 +60,16 @@ A number of parameters can be defined when training discriminators. Training scr
 
 Working example:
  `python classifier_uni_ag.py --model_name_or_path bert-base-cased --train_file datasets/ag_news/full/train_1.csv --validation_file datasets/ag_news/full/validate_1.csv --do_train --do_eval --per_device_train_batch_size 4 --per_device_eval_batch_size 16 --gradient_accumulation_steps 32 --num_train_epochs=20 --output_dir /srv/tempdd/achaffin/bert_bidi_agnews --evaluation_strategy steps --eval_steps 375 --logging_steps 375 --save_steps 375 --ignore_data_skip --preprocessing_num_workers 32`
+ 
+### Language models
+The training of the LM is pretty similar to the one of discriminators since they are all based on HuggingFace trainer.
+The main difference is that `--train_file` and `--validation_file` should not be a csv with labels but just plain text with one sample by line ending with  `<|endoftext|>` token (and optionally starting with `<|startoftext|>`).
+
+Please note that, in order to use the same tokenizer (rather than decoding the LM and encoding it for the discriminator), the language model is a BERT model. From our experiments, it is way easier to obtain good classification accuracy with pretrained GPT-2 rather than obtaining low perplexity with pre-trained BERT model. 
+**Hence, it is surely preferable to use GPT as both generator and discriminator.** 
+However, for our experiments, it was easier to make a bidirectional model unidirectional rather than the other way around.
+
+To use GPT-based models rather than BERT ones, use `--model_name_or_path gpt2`. (for discriminators, please change references from BERT to GPT `e.g: BertModel => GPT2Model` and adjust hidden_state size)
 
 ## References
 Until the pre-print is published, please cite PPL-MCTS if you use this code:
