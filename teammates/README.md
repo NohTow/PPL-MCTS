@@ -59,3 +59,24 @@ A number of parameters can be defined when training discriminators. Training scr
 
 Working example:
  `python classifier_uni_ag.py --model_name_or_path bert-base-cased --train_file datasets/ag_news/full/train_1.csv --validation_file datasets/ag_news/full/validate_1.csv --do_train --do_eval --per_device_train_batch_size 4 --per_device_eval_batch_size 16 --gradient_accumulation_steps 32 --num_train_epochs=20 --output_dir /srv/tempdd/achaffin/bert_bidi_agnews --evaluation_strategy steps --eval_steps 375 --logging_steps 375 --save_steps 375 --ignore_data_skip --preprocessing_num_workers 32`
+
+## References
+Until the pre-print is published, please cite PPL-MCTS if you use this code:
+```
+@article{DBLP:journals/corr/abs-2109-13582,
+  author    = {Antoine Chaffin and
+               Vincent Claveau and
+               Ewa Kijak},
+  title     = {{PPL-MCTS: Constrained Textual Generation Through Discriminator-Guided MCTS Decoding}},
+  journal   = {CoRR},
+  volume    = {abs/2109.13582},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2109.13582},
+  eprinttype = {arXiv},
+  eprint    = {2109.13582},
+  timestamp = {Mon, 04 Oct 2021 17:22:25 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2109-13582.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+```
