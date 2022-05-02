@@ -79,6 +79,10 @@ You can find more information as well as code working with different type of dis
 
 **Please consider using the version working with an unidirectional model as it results in a massive gain in generation time with little effect on the generation quality.**
 
+## Training
+For exhaustiveness, the code used to train our discriminators is also available. Please note that these scripts are not really great and that the updated version available in the [teammates folder](https://github.com/NohTow/PPL-MCTS/tree/main/teammates) is easier to use and better interfaced with HuggingFace library. 
+
+
 ## References
 ```
 @article{DBLP:journals/corr/abs-2109-13582,
