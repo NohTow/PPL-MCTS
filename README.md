@@ -19,6 +19,12 @@ A number of parameters can be defined when executing the MCTS.
 |\-\-rollout_size  |  Number of tokens to generate during rollout|
 |\-\-batch_size  |  Batch size|
 
+Working example: 
+`python mcts_rollout_amazon.py --temperature 1.2 --penalty 1.2 --c 8 --num_it 50 --rollout_size 10 --batch_size 25`
+
+## Paper results reproduction
+Models weights and files used to built prompts for experiments in our paper can be found [here](http://people.irisa.fr/Vincent.Claveau/caches/divers/PPL_MCTS_filetransfer.zip)
+
 ## Code walkthrough
 Some lines of code can be adjusted for your usage.
 Define the path were Hugging Face models and data will be stored
