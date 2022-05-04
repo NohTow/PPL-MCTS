@@ -1,5 +1,5 @@
 import os
-os.environ['TRANSFORMERS_CACHE'] = '/srv/tempdd/achaffin/.cache'
+os.environ['TRANSFORMERS_CACHE'] = 'placeholder'
 import numpy as np
 from tqdm import tqdm
 import pandas as pd
