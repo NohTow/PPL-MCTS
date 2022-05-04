@@ -48,6 +48,14 @@ parser.add_argument(
     help="Number of MCTS iteration for one token"
 )
 
+parser.add_argument(
+    "--batch_size",
+    default=5,
+    type=int,
+    required=False,
+    help="Number of prompts used for generation at once"
+)
+
 
 args = parser.parse_args()
 
@@ -599,7 +607,7 @@ def main():
     print("dataset loaded")
     generated_counter = 0
     samples_size = 501
-    batch_size = 25
+    batch_size = args.batch_size
     labels = torch.zeros((batch_size, 4), dtype=torch.uint8, device="cuda")
     sot_texts = [None] * batch_size
     MCTS = NumpyMCTS(root_fun, rec_fun, batch_size=batch_size, num_simulations=args.num_it, num_actions=vocab_size+1, num_sparse_actions=50, pb_c_init=args.c, temperature = args.temperature, alpha=args.alpha, penalty=args.penalty)

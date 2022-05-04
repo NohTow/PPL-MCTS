@@ -48,6 +48,14 @@ parser.add_argument(
     help="Number of MCTS iteration for one token"
 )
 
+parser.add_argument(
+    "--batch_size",
+    default=5,
+    type=int,
+    required=False,
+    help="Number of prompts used for generation at once"
+)
+
 
 args = parser.parse_args()
 
@@ -633,7 +641,7 @@ def main():
     print("dataset loaded")
     generated_counter = 0
     samples_size = 501
-    batch_size = 25
+    batch_size = args.batch_size
     labels = torch.zeros(batch_size, dtype=torch.long, device="cuda")
     texts = {}
     for label_name in label_names:
