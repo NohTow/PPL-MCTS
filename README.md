@@ -23,7 +23,7 @@ Working example:
 `python mcts_rollout_amazon.py --temperature 1.2 --penalty 1.2 --c 8 --num_it 50 --rollout_size 10 --batch_size 25`
 
 ## Paper results reproduction
-Models weights and files used to built prompts for experiments in our paper can be found [here](http://people.irisa.fr/Vincent.Claveau/caches/divers/PPL_MCTS_filetransfer.zip)
+Models weights and files used to built prompts for experiments in our paper can be found [here](http://hoaxdetector.irisa.fr/data/PPL_MCTS_filetransfer.zip)
 
 ## Code walkthrough
 Some lines of code can be adjusted for your usage.
