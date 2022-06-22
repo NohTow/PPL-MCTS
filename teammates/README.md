@@ -1,5 +1,5 @@
-# Choosing The Right Teammate For Cooperative Text Generation 🏇
-This is the repository for the code of the  **Choosing The Right Teammate For Cooperative Text Generation** (pre-print to be published) paper.
+# Which Discriminator for Cooperative Text Generation?🏇
+This is the repository for the code of the  **[Which Discriminator for Cooperative Text Generation?](https://arxiv.org/abs/2204.11586)** paper.
 
 It is an extension of the code of the **[PPL-MCTS: Constrained Textual Generation Through Discriminator-Guided Decoding](https://arxiv.org/pdf/2109.13582.pdf)** paper, which is at the root of this [repository](https://github.com/NohTow/PPL-MCTS/). PPL-MCTS is a plug-and-play decoding method that uses Monte Carlo Tree Search to find a sequence that satisfy a constraint defined by a discriminator. It can be used to guide **any** language model with **any** discriminator that verify if the input sequence satisfy the desired constraint or not.
 
@@ -74,19 +74,16 @@ To use GPT-based models rather than BERT ones, use `--model_name_or_path gpt2`. 
 ## References
 Until the pre-print is published, please cite PPL-MCTS if you use this code:
 ```
-@article{DBLP:journals/corr/abs-2109-13582,
-  author    = {Antoine Chaffin and
-               Vincent Claveau and
-               Ewa Kijak},
-  title     = {{PPL-MCTS: Constrained Textual Generation Through Discriminator-Guided MCTS Decoding}},
+@article{DBLP:journals/corr/abs-2204-11586,
+  author    = {Antoine Chaffin and Thomas Scialom and Sylvain Lamprier and Jacopo Staiano and Benjamin Piwowarski and Ewa Kijak and Vincent Claveau},
+  title     = {{Which Discriminator for Cooperative Text Generation?}},
   journal   = {CoRR},
-  volume    = {abs/2109.13582},
-  year      = {2021},
-  url       = {https://arxiv.org/abs/2109.13582},
+  volume    = {abs/2204.11586},
+  year      = {2022},
+  url       = {https://arxiv.org/abs/2204.11586},
   eprinttype = {arXiv},
-  eprint    = {2109.13582},
-  timestamp = {Mon, 04 Oct 2021 17:22:25 +0200},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2109-13582.bib},
+  eprint    = {2204.11586},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2204-11586.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
