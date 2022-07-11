@@ -72,19 +72,32 @@ However, for our experiments, it was easier to make a bidirectional model unidir
 To use GPT-based models rather than BERT ones, use `--model_name_or_path gpt2`. (for discriminators, please change references from BERT to GPT `e.g: BertModel => GPT2Model` and adjust hidden_state size)
 
 ## References
-Until the pre-print is published, please cite PPL-MCTS if you use this code:
 ```
-@article{DBLP:journals/corr/abs-2204-11586,
-  author    = {Antoine Chaffin and Thomas Scialom and Sylvain Lamprier and Jacopo Staiano and Benjamin Piwowarski and Ewa Kijak and Vincent Claveau},
-  title     = {{Which Discriminator for Cooperative Text Generation?}},
-  journal   = {CoRR},
-  volume    = {abs/2204.11586},
+@inproceedings{DBLP:conf/sigir/ChaffinSLSPKC22,
+  author    = {Antoine Chaffin and
+               Thomas Scialom and
+               Sylvain Lamprier and
+               Jacopo Staiano and
+               Benjamin Piwowarski and
+               Ewa Kijak and
+               Vincent Claveau},
+  editor    = {Enrique Amig{\'{o}} and
+               Pablo Castells and
+               Julio Gonzalo and
+               Ben Carterette and
+               J. Shane Culpepper and
+               Gabriella Kazai},
+  title     = {Which Discriminator for Cooperative Text Generation?},
+  booktitle = {{SIGIR} '22: The 45th International {ACM} {SIGIR} Conference on Research
+               and Development in Information Retrieval, Madrid, Spain, July 11 -
+               15, 2022},
+  pages     = {2360--2365},
+  publisher = {{ACM}},
   year      = {2022},
-  url       = {https://arxiv.org/abs/2204.11586},
-  eprinttype = {arXiv},
-  eprint    = {2204.11586},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2204-11586.bib},
+  url       = {https://doi.org/10.1145/3477495.3531858},
+  doi       = {10.1145/3477495.3531858},
+  timestamp = {Sat, 09 Jul 2022 09:25:34 +0200},
+  biburl    = {https://dblp.org/rec/conf/sigir/ChaffinSLSPKC22.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
-
 ```
