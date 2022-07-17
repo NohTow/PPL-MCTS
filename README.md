@@ -90,21 +90,27 @@ For exhaustiveness, the code used to train our discriminators is also available.
 
 
 ## References
+If you use this code, please cite our paper using the following reference (and please consider staring/forking the repo)
 ```
-@article{DBLP:journals/corr/abs-2109-13582,
+@inproceedings{DBLP:conf/naacl/ChaffinCK22,
   author    = {Antoine Chaffin and
                Vincent Claveau and
                Ewa Kijak},
-  title     = {{PPL-MCTS: Constrained Textual Generation Through Discriminator-Guided MCTS Decoding}},
-  journal   = {CoRR},
-  volume    = {abs/2109.13582},
-  year      = {2021},
-  url       = {https://arxiv.org/abs/2109.13582},
-  eprinttype = {arXiv},
-  eprint    = {2109.13582},
-  timestamp = {Mon, 04 Oct 2021 17:22:25 +0200},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2109-13582.bib},
+  editor    = {Marine Carpuat and
+               Marie{-}Catherine de Marneffe and
+               Iv{\'{a}}n Vladimir Meza Ru{\'{\i}}z},
+  title     = {{PPL-MCTS:} Constrained Textual Generation Through Discriminator-Guided
+               {MCTS} Decoding},
+  booktitle = {Proceedings of the 2022 Conference of the North American Chapter of
+               the Association for Computational Linguistics: Human Language Technologies,
+               {NAACL} 2022, Seattle, WA, United States, July 10-15, 2022},
+  pages     = {2953--2967},
+  publisher = {Association for Computational Linguistics},
+  year      = {2022},
+  url       = {https://aclanthology.org/2022.naacl-main.215},
+  timestamp = {Fri, 15 Jul 2022 14:51:04 +0200},
+  biburl    = {https://dblp.org/rec/conf/naacl/ChaffinCK22.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
-
 ```
+
