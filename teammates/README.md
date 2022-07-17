@@ -72,6 +72,7 @@ However, for our experiments, it was easier to make a bidirectional model unidir
 To use GPT-based models rather than BERT ones, use `--model_name_or_path gpt2`. (for discriminators, please change references from BERT to GPT `e.g: BertModel => GPT2Model` and adjust hidden_state size)
 
 ## References
+If you use this code, please cite our paper using the following reference (and please consider staring/forking the repo)
 ```
 @inproceedings{DBLP:conf/sigir/ChaffinSLSPKC22,
   author    = {Antoine Chaffin and
