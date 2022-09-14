@@ -1,5 +1,5 @@
 # PPL-MCTS
-This is the repository for the code of the **[PPL-MCTS: Constrained Textual Generation Through Discriminator-Guided Decoding](https://arxiv.org/pdf/2109.13582.pdf)** paper.
+This is the repository for the code of the **[PPL-MCTS: Constrained Textual Generation Through Discriminator-Guided Decoding](https://arxiv.org/pdf/2109.13582.pdf)** paper, accepted at [NAACL 2022](https://aclanthology.org/2022.naacl-main.215/).
 
 It is a plug-and-play decoding method that uses Monte Carlo Tree Search to find a sequence that satisfy a constraint defined by a discriminator. It can be used to guide **any** language model with **any** discriminator that verify if the input sequence satisfy the desired constraint or not.
 The code is based on the [Hugging Face transformers library](https://huggingface.co/docs/transformers/index) both for the language model and the discriminator.
