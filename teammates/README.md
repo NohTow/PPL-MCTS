@@ -45,7 +45,7 @@ A number of parameters can be defined when using MCTS generation scripts.
 To run usual parameters generation, use: `python mcts_ag_bert_uni.py--temperature 1 --penalty 1.2 --c 3 --num_it 50`
 
 ## Paper results reproduction
-Models weights and files used to built prompts for experiments in our paper can be found [here](http://hoaxdetector.irisa.fr/data/Which_Discriminator_Filetransfer.zip]
+Models weights and files used to built prompts for experiments in our paper can be found [here](http://hoaxdetector.irisa.fr/data/Which_Discriminator_Filetransfer.zip)
 
 ## Training
 ### Discriminators
