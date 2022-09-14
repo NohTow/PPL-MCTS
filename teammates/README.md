@@ -1,5 +1,5 @@
 # Which Discriminator for Cooperative Text Generation?🏇
-This is the repository for the code of the  **[Which Discriminator for Cooperative Text Generation?](https://arxiv.org/abs/2204.11586)** paper.
+This is the repository for the code of the  **[Which Discriminator for Cooperative Text Generation?](https://arxiv.org/abs/2204.11586)** paper, accepted at [SIGIR 2022](https://dl.acm.org/doi/abs/10.1145/3477495.3531858).
 
 It is an extension of the code of the **[PPL-MCTS: Constrained Textual Generation Through Discriminator-Guided Decoding](https://arxiv.org/pdf/2109.13582.pdf)** paper, which is at the root of this [repository](https://github.com/NohTow/PPL-MCTS/). PPL-MCTS is a plug-and-play decoding method that uses Monte Carlo Tree Search to find a sequence that satisfy a constraint defined by a discriminator. It can be used to guide **any** language model with **any** discriminator that verify if the input sequence satisfy the desired constraint or not.
 
@@ -43,6 +43,9 @@ A number of parameters can be defined when using MCTS generation scripts.
 |\-\-batch_size  |  Batch size|
 
 To run usual parameters generation, use: `python mcts_ag_bert_uni.py--temperature 1 --penalty 1.2 --c 3 --num_it 50`
+
+## Paper results reproduction
+Models weights and files used to built prompts for experiments in our paper can be found [here](http://hoaxdetector.irisa.fr/data/Which_Discriminator_Filetransfer.zip]
 
 ## Training
 ### Discriminators
